@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style/about_us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="topbar">
+            <img src="media/whatsapp.png" alt="description of image" class="whtsp">
+            <div class="search-bar">
+                <input type="text" >
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+                
+            </div>
+            <a href="#" class="name"><b>BEST</b><span><b>Fashion</b></span></a>
+            <div class="right-nav">
+                <a href="#"><i class="fa-solid fa-truck"></i></i></a>
+                <select>
+                    <option value="PKR">PKR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="USD">USD</option>
+                </select>
+                
+                <a href="c:\Users\Win 11\Desktop\Clothing website\Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+           
+    
+        </div>
+        <div class="navbar">
+            <!-- sign up -->
+    
+            <a href="c:\Users\Win 11\Desktop\web\Clothing website\Clothing website\Login form.html">
+                <i class="fa-regular fa-user"></i>
+            </a>
+            
+            
+                    <div class="nav-links">
+                        <a href="#" class="active">home</a>
+                        <a href="#">shop</a>
+                        <a href="#">women's</a>
+                        <a href="#">men's</a>
+                        <a href="#">contact</a>
+                    </div>
+                    <div class="checkout">
+                        Checkout <i class="fa-solid fa-right-from-bracket"></i>
+                    </div>
+    </div>
+
+    <section class="about-us">
+       
+        <h2 class="tagline">Our Brand Owners</h2>
+        
+
+        <div class="images">
+    <div class="image-container">
+        <img src="media/7.jpg" alt="Model 1" class="side-img" onclick="showDescription(1)">
+    </div>
+    <div class="image-container">
+        <img src="media/8.jpg" alt="Model 2" class="center-img" onclick="showDescription(2)">
+    </div>
+    <div class="image-container">
+        <img src="media/3.jpg" alt="Model 3" class="side-img" onclick="showDescription(3)">
+    </div>
+</div>
+
+<!-- This will show the text when an image is clicked -->
+<div id="image-description" class="content"></div>
+
+
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p class="para1">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries.
+            </p>
+            <p class="para2">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries.
+            </p>
+        </div>
+        <script>
+  function showDescription(imageNumber) {
+    const descriptionDiv = document.getElementById("image-description");
+    
+    // Define messages
+    let message = "";
+    if (imageNumber === 1) {
+      message = "Owner 1: A creative mind behind our fashion designs.";
+    } else if (imageNumber === 2) {
+      message = "Owner 2: Expert in marketing and brand strategy.";
+    } else if (imageNumber === 3) {
+      message = "Owner 3: Responsible for operations and management.";
+    }
+
+    // Show the description
+    descriptionDiv.innerText = message;
+    descriptionDiv.style.display = "block";
+  }
+</script>
+
+        <footer>
+            <div class="contnaier">
+                <div class="big-rows">
+                    <h6 class="logo">best<span>shop</span></h6>
+                    <p>Lorem ipsum dolor sit, amet consectetur 
+                        adipisicing elit. Dolorum perferendis iste officia!</p>
+                        <div class="coical-icon">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                        </div>
+                </div>
+    
+                <div class="row">
+                    <h2 class="tittle">Information</h2>
+                    <div class="links">
+                        <a href="#">Our Stores</a>
+                        <a href="#">About US</a>
+                        <a href="#">Business</a>
+                        <a href="#">Delivery</a>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <h2 class="tittle">Useful Links</h2>
+                    <div class="links">
+                        <a href="#">Our Stores</a>
+                        <a href="#">About US</a>
+                        <a href="#">Business</a>
+                        <a href="#">Delivery</a>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <h2 class="tittle">Service</h2>
+                    <div class="links">
+                        <a href="#">Our Stores</a>
+                        <a href="#">About US</a>
+                        <a href="#">Business</a>
+                        <a href="#">Delivery</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="bottom-footer">
+                <div class="content">
+    
+                    <div class="payment-img">
+                        <img src="img/payment-1.png" alt="">
+                        <img src="img/payment-2.png" alt="">
+                        <img src="img/payment-3.png" alt="">
+                        <img src="img/payment-4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>

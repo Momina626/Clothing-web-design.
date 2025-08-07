@@ -1,0 +1,332 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.nav {
+    position: sticky;
+    top: 0; /* Distance from the top of the viewport */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    background-color: white; /* Ensure visibility against the background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a floating effect */
+}
+
+.topbar {
+    background-color: black;
+    height: 60px;
+    line-height: 50px;
+    display: flex;               /* Enable flexbox layout */
+    align-items: center;         /* Center items vertically */
+    justify-content: space-between;  /* Space between items (left and right) */
+    padding: 0 10px;             /* Add some padding for spacing */
+}
+
+.whtsp {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px; 
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.whtsp:hover {
+    animation: shake 0.5s ease-in-out;  /* Shake effect */
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);  /* Start position */
+    }
+    25% {
+        transform: translateX(-5px);  /* Move left */
+    }
+    50% {
+        transform: translateX(5px);  /* Move right */
+    }
+    75% {
+        transform: translateX(-5px);  /* Move left */
+    }
+    100% {
+        transform: translateX(0);  /* Return to original position */
+    }
+}
+
+         /*Search bar*/
+/* Input Field */
+.search-bar {
+    display: flex;
+    background-color: white; /* Light gray background */
+    border: 1px solid white; /* Optional border */
+    border-radius: 5px; /* Rounded corners */
+    width: 200px; /* Adjust the width as needed */
+}
+
+.search-bar input {
+    flex: 1; /* Takes up all available space */
+    border: none; /* Remove default input border */
+    outline: none; /* Remove default input outline */
+    background: transparent;
+}
+
+.search-bar button {
+    border: none; /* Removes default border */
+    background: transparent; /* Transparent background */
+    cursor: pointer; /* Show pointer cursor on hover */
+    color: #888; /* Light gray icon color */
+    padding: 4px;
+}
+.search-bar button:hover {
+    color: black; /* Change icon color on hover */
+}
+.search-bar button img {
+    width: 20px; /* Adjust icon size */
+    height: 20px;
+}
+.search-bar button:hover {
+    color: black; /* Change icon color on hover */
+}
+       
+
+.name{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(253, 249, 249);
+    flex-grow: 1;  /* Allow logo to take the remaining space and center it */
+    text-align: center;
+}
+
+span {
+    color: #ee2761;
+}
+.navbar{
+    position: sticky;
+}
+.right-nav {
+    display: flex;
+    gap: 20px; /* Adjust the gap value as needed */
+    padding-top: 10px;
+    
+}
+.right-nav i {
+    color: rgb(248, 247, 247); /* Hex color for green */
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.navbar
+{
+   display: flex;
+   justify-content: space-between;
+   font-family: 'Roboto Condensed', sans-serif;
+   padding: 20px;
+   text-decoration: none;
+   background-color: #faf5f5;
+   
+}
+.fa-regular.fa-user {
+    color: rgb(10, 0, 0);
+    font-size: 24px;
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.fa-regular.fa-user:hover {
+    color: #ee2761 ; /* Change color on hover */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+    gap: 50px; /* Adjust the gap value as needed */
+}
+.checkout {
+    display: inline-flex; /* Align text and icon horizontally */
+    align-items: center; /* Center text and icon vertically */
+    font-size: 18px; /* Text size */
+    color: #080000; /* Text and icon color */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.checkout i {
+    margin-left: 8px; /* Add space between text and icon */
+    font-size: 20px; /* Icon size */
+}
+
+.checkout:hover {
+    color: #ee2761; /* Change text and icon color on hover */
+}
+select{
+    background-color: #080000;
+    color: white;
+    border: transparent;
+}
+.about-us {
+    text-align: center;
+    background-color: black;
+    padding-top: 80px;
+    height:870px;
+}
+
+.tagline {
+    margin-top: 0;
+    padding-top:0;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Image Alignment */
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.side-img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.center-img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px); /* Pull the center image upwards */
+}
+
+.about-text {
+    text-align: center; /* Centers the entire text content */
+    padding: 20px 40px; /* Adds padding around the text */
+    max-width: 800px; /* Restricts the width to avoid overly long lines */
+    margin: 0 auto; /* Centers the text block on the page */
+    color: antiquewhite;
+    
+}
+
+.about-text h2 {
+    font-size: 28px; /* Sets the font size of the heading */
+    font-weight: bold; /* Makes the heading bold */
+    text-transform: uppercase; /* Converts text to uppercase */
+    letter-spacing: 1px; /* Adds spacing between letters */
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+.about-text p {
+    font-size: 16px; /* Sets the font size for paragraphs */
+    line-height: 1.8; /* Increases line spacing for readability */
+    text-align: justify; /* Justifies the paragraph text */
+    margin-bottom: 20px; /* Adds space below each paragraph */
+}
+
+/* start footer */ 
+
+footer .contnaier{
+    padding:  0 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    height: 250px;
+
+}
+footer .big-rows{
+    width: 33%;
+    padding-right: 50px;
+}
+footer .big-rows .logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+footer .big-rows .logo span{
+    color: #ee2761;
+}
+footer .big-rows p{
+    color: #606060;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+footer .big-rows .coical-icon i{
+    width: 40px;
+    height: 40px;
+    background-color: #ee2761;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+    border: 1px solid #ee2761;
+}
+footer .big-rows .coical-icon i:hover{
+    background-color: transparent;
+    color: #ee2761;
+}
+footer .contnaier .row{
+    width: 20%;
+}
+footer .contnaier .row .tittle{
+    color: #111;
+    margin-bottom: 25px;
+}
+footer .contnaier .row .links{
+    display: flex;
+    flex-direction: column;
+}
+footer .contnaier .row .links a{
+    color: #606060;
+    padding: 8px 0;
+}
+footer .contnaier .row .links a:hover{
+    color: #ee2761;
+}
+
+footer .bottom-footer{
+    border-top: 1px solid #94949450;
+}
+footer .bottom-footer .content{
+    padding: 20px 0;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .bottom-footer .content p{
+    color: #111;
+    font-size: 18px;
+}
+footer .bottom-footer .content p span{
+    color: #ee2761;
+    font-weight: bold;
+}
+#image-description {
+  margin-top: 20px;
+  font-size: 18px;
+  color:white;
+  display: none; /* Hidden until image is clicked */
+}
+
